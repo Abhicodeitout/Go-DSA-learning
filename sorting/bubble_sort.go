@@ -19,6 +19,6 @@ func bubble_sort(arr []int) []int {
 }
 
 func main() {
-	arr := []int{12, 45, 65, 34, 76}
+	arr := []int{12, 45, 65, 34, 76}// input can be taken according to you 
 	fmt.Println(bubble_sort(arr))
 }
