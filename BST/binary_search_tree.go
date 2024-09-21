@@ -81,14 +81,6 @@ func (n *Node) FindMin() *Node {
 	return n.Left.FindMin()
 }
 
-// FindMax finds the node with the maximum value in the BST
-func (n *Node) FindMax() *Node {
-	if n.Right == nil {
-		return n
-	}
-	return n.Right.FindMax()
-}
-
 // Delete removes a node with the specified value from the BST
 func (n *Node) Delete(value int) *Node {
 	if n == nil {
@@ -113,6 +105,14 @@ func (n *Node) Delete(value int) *Node {
 		n.Right = n.Right.Delete(minRight.Value)
 	}
 	return n
+}
+
+// FindMax finds the node with the maximum value in the BST
+func (n *Node) FindMax() *Node {
+	if n.Right == nil {
+		return n
+	}
+	return n.Right.FindMax()
 }
 
 // Main function demonstrating the usage of the BST
