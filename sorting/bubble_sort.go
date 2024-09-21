@@ -3,10 +3,6 @@
 
 package main
 
-import (
-	"fmt"
-)
-
 func bubble_sort(arr []int) []int {
 	for i := 0; i < len(arr)-1; i++ {
 		for j := 0; j < len(arr)-i-1; j++ {
@@ -18,7 +14,7 @@ func bubble_sort(arr []int) []int {
 	return arr
 }
 
-func main() {
-	arr := []int{12, 45, 65, 34, 76}// input can be taken according to you 
-	fmt.Println(bubble_sort(arr))
-}
+//func main() {
+//	arr := []int{12, 45, 65, 34, 76}// input can be taken according to you
+//	fmt.Println(bubble_sort(arr))
+//}

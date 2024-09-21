@@ -1,8 +1,6 @@
 // Merge sort works on the principle of divide and merge
-// memory consuption is more 
+// memory consuption is more
 package main
-
-import "fmt"
 
 func merge_sort(arr []int) []int {
 	if len(arr) < 2 {
@@ -34,16 +32,15 @@ func merge(a []int, b []int) []int {
 	}
 	return res
 }
-func main() {
-	arr := []int{10, 4, 5, 2, 3, 6, 9, 1, 7, 8}
-	fmt.Println(merge_sort(arr))
-}
 
-🔗
-Fast. Merge sort is much faster than bubble sort, being O(n*log(n)) instead of O(n^2).
-Stable. Merge sort is also a stable sort which means that values with duplicate keys in the original list will be in the same order in the sorted list.
-Cons
-🔗
-Extra memory. Most sorting algorithms can be performed using a single copy of the original array. Merge sort requires an extra array in memory to merge the sorted subarrays.
-Recursive: Merge sort requires many recursive function calls, and function calls can have significant resource overhead.
-If you need a sorting algorithm
+//func main() {
+//	arr := []int{10, 4, 5, 2, 3, 6, 9, 1, 7, 8}
+//	fmt.Println(merge_sort(arr))
+//}
+
+//Fast. Merge sort is much faster than bubble sort, being O(n*log(n)) instead of O(n^2).
+//Stable. Merge sort is also a stable sort which means that values with duplicate keys in the original list will be in the same order in the sorted list.
+//Cons
+//Extra memory. Most sorting algorithms can be performed using a single copy of the original array. Merge sort requires an extra array in memory to merge the sorted subarrays.
+//Recursive: Merge sort requires many recursive function calls, and function calls can have significant resource overhead.
+//If you need a sorting algorithm
