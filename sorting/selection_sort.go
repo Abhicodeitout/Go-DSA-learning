@@ -3,6 +3,10 @@
 // This makes the algorithm inefficient for large datasets as its performance deteriorates with the increase in the size of the input.
 package main
 
+import (
+	"fmt"
+)
+
 func selection_sort(arr []int) []int {
 	for i := 0; i < len(arr)-1; i++ {
 		min := i
@@ -21,8 +25,7 @@ func selection_sort(arr []int) []int {
 	return arr
 }
 
-//func main() {
-//	arr := []int{13, 46, 24, 52, 20, 9}
-//	fmt.Println(selection_sort(arr))
-//
-//}
+func main() {
+	arr := []int{13, 46, 24, 52, 20, 9}
+	fmt.Println(selection_sort(arr))
+}
