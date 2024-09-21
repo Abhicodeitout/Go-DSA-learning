@@ -2,8 +2,6 @@
 // Click here and start typing.
 package main
 
-import "fmt"
-
 func quick_sort_start(arr []int) []int {
 	return quick_start(arr, 0, len(arr)-1)
 }
@@ -30,7 +28,7 @@ func partition(arr []int, low, high int) ([]int, int) {
 	return arr, i
 }
 
-func main() {
-	arr := []int{12, 7, 3, 9, 0, 2}
-	fmt.Println(quick_sort_start(arr))
-}
+//func main() {
+//	arr := []int{12, 7, 3, 9, 0, 2}
+//	fmt.Println(quick_sort_start(arr))
+//}
